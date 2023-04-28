@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="time-container">
+        <h1>TM Time Tracker</h1>
+        <div class="meeting-initiation">
+            <button class="meeting-start">Meeting Started</button>
+            <div class="start-time-stamp">6:00</div>
+            <div class="meeting-duration">0:01</div>
+        </div>
+
+        <div class="speech-time">
+            <div class="speech-time__list">
+                <div class="speech-time__speaker-name">
+                    <input type="text" class="speaker-name">
+                    <div class="edit-button">
+                        <button class="edit">✏️</button>
+                        <button class="save">✅</button>
+                    </div>
+                </div>
+                <div class="speech-time__button-container">
+                    <button class="play" onclick="watchStart()">▶️</button>
+                    <button class="stop" onclick="watchStop()">⏹️</button>
+                    <button class="reset" onclick="watchReset()">🔄️</button>
+                </div>
+                <div class="speech-time__total">
+                    <span class="time-track">00:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

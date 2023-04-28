@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+button{
+    cursor: pointer;
+}
+
+:root{
+    --container-width: 600px;
+    --default-padding: 20px;
+}
+
+.time-container{
+    padding: var(--default-padding);
+    max-width: var(--container-width);
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+.meeting-initiation{
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between
+}
+
+button.meeting-start{
+    background-color: green;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.speech-time__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.speech-time__speaker-name{
+    display: flex;
+}
